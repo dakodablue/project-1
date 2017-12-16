@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Get Data</title>
+</head>
+
+<body>
+  <button id="category-button">Get Category</button>
+  <div id="category">
+  </div>
+
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    $("#food-button").on("click", function() {
+
+      
+      //var queryURL = "https://cors-anywhere.herokuapp.com/https://www.googleapis.com/fusiontables/v2/query?sql=SELECT * FROM 1KxVV0wQXhxhMScSDuqr-0Ebf0YEt4m4xzVplKd4&key=AIzaSyDHFc0n-79Oojo2PzJhdJ4g0i81cfiTS_g";
+     
+     //var query1 = "https://ohana-api-demo.herokuapp.com/api/search?keyword=food"
+     //var query2 = "https://ohana-api-demo.herokuapp.com/api/search?keyword=health";
+     var query3 = "https://cors-anywhere.herokuapp.com/https://ohana-api-demo.herokuapp.com/api/categories"
+
+      //ajax call to get the cats
+      $.ajax({
+        url: query3,
+        method: "GET"
+      })
+
+      //callback function
+      .done(function(response) {
+
+        console.log(response);
+       
+        var feedDiv = $('<div class="options">')
+          $("#food").prepend(feedDiv);
+  
+
+      
+      });
+    });
+  </script>
+</body>
+
+</html>
