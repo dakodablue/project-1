@@ -13,7 +13,7 @@ $("#category-link").on("click", function() {
     });
 
 
-    $("#emergency-link").on("click", function() {
+    $(".emergency-link").on("click", function() {
      var queryEmergency = "https://ohana-api-demo.herokuapp.com/api/search?keyword=emergency";
      
       $.ajax({
@@ -75,7 +75,7 @@ $("#category-link").on("click", function() {
     });
 
 
-    $("#food-link").on("click", function() {
+    $(".food-link").on("click", function() {
      var queryFood = "https://ohana-api-demo.herokuapp.com/api/search?keyword=food";
     
       $.ajax({
@@ -143,7 +143,7 @@ $("#category-link").on("click", function() {
     });
 
 
-    $("#transit-link").on("click", function() {
+    $(".transit-link").on("click", function() {
      var queryTransit = "https://ohana-api-demo.herokuapp.com/api/search?keyword=transit";
     
       $.ajax({
@@ -210,7 +210,7 @@ $("#category-link").on("click", function() {
       });
     });
 
-    $("#care-link").on("click", function() {
+    $(".care-link").on("click", function() {
      var queryCare = "https://ohana-api-demo.herokuapp.com/api/search?keyword=care";
     
       $.ajax({
@@ -276,7 +276,7 @@ $("#category-link").on("click", function() {
       
       });
     });
-    $("#work-link").on("click", function() {
+    $(".work-link").on("click", function() {
      var queryWork = "https://ohana-api-demo.herokuapp.com/api/search?keyword=work";
     
       $.ajax({
@@ -344,7 +344,7 @@ $("#category-link").on("click", function() {
     });
 
 
-    $("#housing-link").on("click", function() {
+    $(".housing-link").on("click", function() {
         var queryFood = "https://ohana-api-demo.herokuapp.com/api/search?keyword=housing";
        
          $.ajax({
