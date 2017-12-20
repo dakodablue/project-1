@@ -66,13 +66,11 @@
     border: 2px;
     padding: 10px;
     background-color: midnightblue;
+    margin-bottom: 0px; 
 
 
   }
 
- .search {
-  position: fixed;
- }
  
   
 
