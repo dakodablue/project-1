@@ -1,3 +1,18 @@
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC2bu2RX1dRs_PjFXqmbrFfCvTdcIAQ29w",
+    authDomain: "project1-22a93.firebaseapp.com",
+    databaseURL: "https://project1-22a93.firebaseio.com",
+    projectId: "project1-22a93",
+    storageBucket: "project1-22a93.appspot.com",
+    messagingSenderId: "789161509104"
+  };
+  firebase.initializeApp(config);
+
+
+
+
 $("#category-link").on("click", function() {
     
      var queryCategory = "https://cors-anywhere.herokuapp.com/https://ohana-api-demo.herokuapp.com/api/categories";
