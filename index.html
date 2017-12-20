@@ -11,80 +11,109 @@
         <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
         <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-</head>
+    </head>
 <body>
+    <!-- Navbar -->
 	<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-       
-       <div class="form-group">
-        	<div class="text-right">
-        <a href="#">About</a>
-      	<a href="#">Feedback</a>
+    <div class="container">
+      <div class="navbar-header">
+       </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+        <h3>Ohana Web Search</h3>
       </div>
-     </nav>
-
-
-	<div class="container">
-		
-		<div class="jumbotron">
-      	<h1 class="text-left"><strong>I NEED...</strong></h1>
-      	<div class="form-group">
-        <div class="text-right">
+    </div>
+ </nav>
+         <!-- Jumbotron header with links -->
+         <div class="container">
+ <div id="container">
+   <div class="row">
+     <div class="col-lg-12">
+       <div class="jumbotron">
+         <div class="text-right">
         <a href="#">English</a>
         <a href="#">Spanish</a>
-        <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-        
-          <input type="text" class="form-control" placeholder="Search">
+    <!-- <h1 class="text-center"><strong>I NEED...</strong></h1> -->
+      <div class="row">
+        <div class="col-lg-12">
+          
+            <div class="row">
+              <div class="col-lg-3">
+                <h1 class="search">What do you need...</h1>
+              </div>
+              <div class="col-lg-9">
+              <form role="form">
+              <div class="form-group">
+        <input class="form-control user-input" id="name-input" type="text">
+              </div>
+              </form>   
+        <button type="button" class="btn btn-success">  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Submit</button>
+          <h5>Sevices Near Me</h5>
+        </div>
+          </div>
         </div>
       </div>
+    </div>
   </div>
-</div>
-</div>
-<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title"></h3>
+
+      <!-- Left Panel -->
+  <div class="container1">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+           <h3 class="panel-title1">Social Services</h3>
+       </div>
+          <div class="panel-body">
+        
+        <h3><a>Healthcare.com</a></h3>
+        <h3><a>Foodbank.org</a></h3>
+        <h3><a>Mentalhealth services.org</a></h3>
+          </div>
         </div>
-            <div class="panel-body">
+      </div>
+
+       <!-- Right Panel -->
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           <h3 class="panel-title2">Government Assistance</h3>
+          </div>
+    <div class="panel-body">
+           <h3><a>Healthcare.com</a></h3>
+            <h3><a>Foodbank.com</a></h3>
+            <h3><a>Mentalhealth Services.com</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <!-- footer -->
+       <div class="row">
+       <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading1">
+            <h3 class="panel-title3">Other Information</h3>
+          </div>
+          <div class="panel-body1">
+
+     <div class="pare">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo voluptates blanditiis nisi! Ullam dolore aspernatur, ratione error similique veniam iusto, labore repellat eaque nostrum optio doloribus illo nihil dolor?</p>
             </div>
           </div>
         </div>
-
-        <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title"></h3>
-        </div>
-            <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
   
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script type="text/javascript"></script>

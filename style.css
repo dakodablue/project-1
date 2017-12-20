@@ -1,0 +1,82 @@
+.navbar {
+	background-color: midnightblue;
+	padding: 5px;
+	border: 2px;
+}
+
+.jumbotron {
+     background-color: lightblue;
+
+     
+   }
+
+ .container {
+    background-color: lightblue;
+   }
+
+ .container1 {
+     background-color: midnightblue;
+     padding-top: 20px;
+     padding-bottom: 1px;
+   }
+
+   #container {
+   	padding: 5px;
+   	background-color: black;
+    padding-top: 15px;
+   }
+
+ .pare {
+    color: black;
+    padding: 5px;
+  }
+
+  .panel-title1 {
+     color: brown;
+  }
+
+  .panel-title2 {
+     color: brown;
+    }
+
+    .panel-body {
+    	background-color: lightblue;
+      padding: 10px;
+    }
+
+  .col-md-7 {
+  	background-color: black;
+  	padding: 5px;
+
+  }
+
+  .col-md-5 {
+  	background-color: black;
+  	padding: 5px;
+  
+
+  }
+  .panel-body1 {
+    background-color: lightblue;
+    padding: 25px;
+
+  }
+  .panel-title3 {
+    color: white;
+    border: 2px;
+    padding: 10px;
+    background-color: midnightblue;
+
+
+  }
+
+ .search {
+  position: fixed;
+ }
+ 
+  
+
+
+
+
+        
