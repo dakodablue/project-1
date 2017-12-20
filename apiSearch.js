@@ -10,22 +10,32 @@
   };
   firebase.initializeApp(config);
 
+  // Initial Values
+  var name = "";
+  var email = "";
+  var mobile = "";
+  var password = "";
 
 
-
-$("#category-link").on("click", function() {
+  $(document).on("click", "#addusertoDB", function(snapshot) {
     
-     var queryCategory = "https://cors-anywhere.herokuapp.com/https://ohana-api-demo.herokuapp.com/api/categories";
-     
-      $.ajax({
-        url: queryCategory,
-        method: "GET"
-      })
-      .done(function(response) {
-        console.log(response);
-      });
+        event.preventDefault();
         
-    });
+        var name = $("#name-input").val().trim();
+        var email = $("#email-input").val().trim();
+        var mobile = $("#mobile-input").val().trim();
+        var password = $("#password-input").val().trim();
+    
+        //to DB
+        database.ref().push({
+            name: name,
+            email: email,
+            mobile: mobile,
+            password: password
+          });
+        });
+
+
 
 
     $(".emergency-link").on("click", function() {
