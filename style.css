@@ -1,72 +1,89 @@
-.navbar {
-	background-color: midnightblue;
-	padding: 5px;
-	border: 2px;
+
+  .navbar {
+	 background-color: #D9B310;
+	 padding: 5px;
+	 border: 2px;
+   color: white;
 }
 
-.jumbotron {
-     background-color: lightblue;
+  .jumbotron {
+     background-color: #328cc1;
+}
 
-     
+  a {
+      color: #F4F4F4;
+     }
+   
+
+   img {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #0B3C5D;
+
    }
 
- .container {
-    background-color: lightblue;
+  .container {
+    background-color: #0B3C5D;
+
    }
 
- .container1 {
-     background-color: midnightblue;
+  .container1 {
+     background-color: #D9B310;
      padding-top: 20px;
-     padding-bottom: 1px;
+    
+
    }
 
    #container {
    	padding: 5px;
    	background-color: black;
     padding-top: 15px;
+    padding-bottom: 15px;
+
    }
 
- .pare {
+  .pare {
     color: black;
     padding: 5px;
   }
 
-  .panel-title1 {
-     color: brown;
+   .panel-title1 {
+     color: #1D2731;
   }
 
-  .panel-title2 {
-     color: brown;
+   .panel-title2 {
+     color: #1D2731;
+
     }
 
     .panel-body {
-    	background-color: lightblue;
+    	background-color: #328cc1;
       padding: 10px;
+
     }
 
-  .col-md-7 {
-  	background-color: black;
-  	padding: 5px;
 
-  }
-
-  .col-md-5 {
-  	background-color: black;
-  	padding: 5px;
-  
-
-  }
-  .panel-body1 {
-    background-color: lightblue;
+    .panel-body1 {
+    background-color: #328cc1;
     padding: 25px;
 
-  }
+    }
+  
   .panel-title3 {
-    color: white;
-    border: 2px;
-    padding: 10px;
-    background-color: midnightblue;
-    margin-bottom: 0px; 
+    color: #1D2731;
+    padding: 5px;
+    background-color: #D9B310;
+    margin-bottom: 0px;
+
+   }
+
+
+  
+
+
 
 
  
