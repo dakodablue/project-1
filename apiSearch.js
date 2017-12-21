@@ -1,18 +1,96 @@
-$("#category-link").on("click", function() {
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC2bu2RX1dRs_PjFXqmbrFfCvTdcIAQ29w",
+    authDomain: "project1-22a93.firebaseapp.com",
+    databaseURL: "https://project1-22a93.firebaseio.com",
+    projectId: "project1-22a93",
+    storageBucket: "project1-22a93.appspot.com",
+    messagingSenderId: "789161509104"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+
+  // Initial Values
+  var name = "";
+  var email = "";
+  var mobile = "";
+  var password = "";
+  var authenticated = false;
+
+//Registration
+  $(document).on("click", "#addusertoDB", function() {
     
-     var queryCategory = "https://cors-anywhere.herokuapp.com/https://ohana-api-demo.herokuapp.com/api/categories";
-     
-      $.ajax({
-        url: queryCategory,
-        method: "GET"
-      })
-      .done(function(response) {
-        console.log(response);
-      });
+        event.preventDefault();
         
+        var name = $("#name-input").val().trim();
+        var email = $("#email-input").val().trim();
+        var mobile = $("#mobile-input").val().trim();
+        var password = $("#password-input").val().trim();
+    
+        //to DB
+        database.ref().push({
+            name: name,
+            email: email,
+            mobile: mobile,
+            password: password,
+            authenticated: false
+          });
+
+          
+          
+        });
+        // Cancel Registration
+        $(document).on("click", "#cancel", function() {
+          
+              event.preventDefault();
+              $("#name-input").val("");
+              $("#email-input").val("");
+              $("#mobile-input").val("");
+              $("#password-input").val("");
+        })
+
+
+//Login to authenticate
+database.ref().on("child_added", function(childSnapshot) {
+
+  $(document).on("click", "#login", function() {
+
+  var loginEmail = $("#login-email-input").val().trim();
+  var loginPwd = $("#login-pwd-input").val().trim();
+
+  if(loginEmail=== childSnapshot.val().email && loginPwd=== childSnapshot.val().password){
+    $('#loginRegLink').hide();
+    $('#loggedAs').html('Logged In as: '+ childSnapshot.val().name);
+    $('#login').attr('data-dismiss','modal');
+    $('#logout').html('Log Out');
+
+    database.ref().push({
+      
+      authenticated: true
     });
 
+    //Show News Feed Link: TODO
 
+  }
+
+  })
+
+})
+
+//Logout
+$(document).on("click", "#logout", function(snapshot) {
+  $('#loginRegLink').attr("style", "display: block")
+  $('#logout').text("");
+  $('#loggedAs').text("");
+
+})
+
+
+
+
+
+//Option Links
     $(".emergency-link").on("click", function() {
      var queryEmergency = "https://ohana-api-demo.herokuapp.com/api/search?keyword=emergency";
      
@@ -62,8 +140,8 @@ $("#category-link").on("click", function() {
             feedDiv.append(descP);
             feedDiv.append(addP);
             feedDiv.append(phoneP);
-            feedDiv.append(latP);
-            feedDiv.append(longP);
+            // feedDiv.append(latP);
+            // feedDiv.append(longP);
             feedDiv.append("---------------------------")
 
             $("#showResult").html(feedDiv);
