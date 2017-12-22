@@ -18,7 +18,7 @@
    img {
     width: 200px;
     height: 200px;
-    margin-left: 30px;
+    margin-left: 70px;
     margin-bottom: 15px;
     padding: 10px;
     background-color: #0B3C5D;
@@ -49,6 +49,7 @@
   .pare {
     color: black;
     padding: 5px;
+
   }
 
    .panel-title1 {
@@ -78,6 +79,7 @@
     padding: 5px;
     background-color: #D9B310;
     margin-bottom: 0px;
+   
 
    }
 
